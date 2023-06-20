@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+<changeSet id="01" author="Maks">
+
+    <sql>
+        create table author(
+            id bigint auto_increment primary key,
+            name varchar(50),
+            surname varchar(50),
+            age int,
+            books_count int,
+            country varchar(30)
+        );
+    </sql>
+</changeSet>
+</databaseChangeLog>
